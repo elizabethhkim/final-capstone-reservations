@@ -1,6 +1,6 @@
 const asyncErrorBoundary = require("../errors/asyncErrorBoundary")
-const hasProperties = require("../")
 const service = require("./reservations.service")
+const hasProperties = require("../utils/hasProperties") 
 
 // to check if all valid properties are included
 
@@ -205,7 +205,7 @@ async function list(req, res) {
   const {date, mobile_number} = req.query
 
   if (date) {
-    res.json({data: await service.listbyDate(date)})
+    res.json({data: await service.listByDate(date)})
   } else if (mobile_number) {
     res.json({data: await service.searchByPhone(mobile_number)})
   } else {

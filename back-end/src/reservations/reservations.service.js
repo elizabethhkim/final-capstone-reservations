@@ -56,7 +56,7 @@ function update(updatedReservation) {
 
 module.exports = {
     list, 
-    listbyDate,
+    listByDate,
     create,
     read,
     updateStatus,
