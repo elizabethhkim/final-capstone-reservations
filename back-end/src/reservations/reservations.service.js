@@ -1,4 +1,3 @@
-const { orderBy } = require("../db/connection")
 const knex = require("../db/connection")
 
 //lists all reservations ordered by time
