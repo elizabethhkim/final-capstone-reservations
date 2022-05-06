@@ -59,18 +59,21 @@ Knex
 
 ## Screenshots
 
-/dashboard
+__/dashboard__
 ![dashboard](./screenshots/dashboard.png)
+<br>
 
-
-/search
+__/search__
 ![search](./screenshots/search.png)
+<br>
 
-/reservations/new
+__/reservations/new__
 ![create-reservation](./screenshots/create-reservation.png)
+<br>
 
-mobile dashboard
+__mobile dashboard__
 ![mobile](./screenshots/mobile.png)
+<br>
 
 <br>
 <br>
