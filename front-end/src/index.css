@@ -1,14 +1,7 @@
 :root {
     --clr-dark: hsl(0, 0%, 20%);
-    --clr-med-dark: hsl(0, 0%, 30%);
     --clr-med: hsl(0, 0%, 40%);
-  
     --clr-light: hsl(0, 0%, 90%);
-    --clr-accent1: hsl(19, 100%, 61%);
-    --clr-accent2: hsl(185, 75%, 44%);
-    --clr-accent2-light: hsla(185, 75%, 44%, 0.15);
-    --clr-accent3: hsl(56, 54%, 53%);
-
 
     --clr-neutral-light: hsl(37, 33%, 69%);
     --clr-neutral-med: hsl(37, 26%, 52%);
@@ -69,15 +62,7 @@
     background-color: var(--clr-dark);
   
   }
-  
-  .med-dark {
-    color: var(--clr-med-dark);
-  }
-  
-  .med-dark-bg {
-    background-color: var(--clr-med-dark);
-  
-  }
+
   .medium {
     color: var(--clr-med);
   }
@@ -93,54 +78,9 @@
   .light-bg {
     background-color: var(--clr-light);
   }
-  .light-hover:hover {
-    color: var(--clr-light);
-  }
-  
-  .accent1 {
-    color: var(--clr-accent1);
-  }
-  
-  .accent1-hover:hover {
-    color: var(--clr-accent1);
-  }
-  
-  .accent1-bg {
-    background-color: var(--clr-accent1);
-  }
-  
-  .accent2 {
-    color: var(--clr-accent2);
-  }
-  
-  .accent2-hover:hover {
-    color: var(--clr-accent2);
-  }
-  
-  .accent2-bg {
-    background-color: var(--clr-accent2);
-  }
-  
-  .accent2-light-bg {
-    background-color: var(--clr-accent2-light);
-  }
-  
-  .accent3 {
-    color: var(--clr-accent3);
-  }
   
   .med-neutral-hover:hover {
     color: var(--clr-neutral-med);
-  }
-  
-  .accent3-bg {
-    background-color: var(--clr-accent3);
-  }
-  
-  .accent1-hover:hover,
-  .accent2-hover:hover,
-  .accent3-hover:hover {
-    text-decoration: none;
   }
   
   .rounded-left-corners-rotated {

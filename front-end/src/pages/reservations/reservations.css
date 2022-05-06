@@ -48,11 +48,11 @@
   }
   
   .res-card.finished {
-    border: 2px solid var(--clr-accent3);
+    border: 2px solid var(--clr-green-dark);
   }
   
   .res-status.finished {
-    background-color: var(--clr-accent3);
+    background-color: var(--clr-green-dark);
   }
   
   .res-card.cancelled {
@@ -231,7 +231,5 @@
     padding: .5rem;
   }
   
-  select:hover, select:focus {
-    border: 4px solid var(--clr-accent2);
-  }
+
   
