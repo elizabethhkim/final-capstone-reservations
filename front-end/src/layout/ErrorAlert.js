@@ -9,9 +9,23 @@ import React from "react";
  */
 
 function ErrorAlert({ error }) {
+  let errMsg;
+  if (error) {
+    errMsg = Array.isArray(error.message) ? (
+      error.message.map((msg) => {
+        return <li>{msg}</li>;
+      })
+    ) : (
+      <li>{error.message}</li>
+    );
+  }
+
   return (
     error && (
-      <div className="alert alert-danger m-2">Error: {error.message}</div>
+      <div className="alert alert-danger m-2">
+        Please fix the following errors:
+        <ul>{errMsg}</ul>
+      </div>
     )
   );
 }
