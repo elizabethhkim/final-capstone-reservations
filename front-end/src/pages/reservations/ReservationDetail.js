@@ -58,14 +58,14 @@ export default function ReservationDetail({ reservation, setError }) {
           {status === "booked" && (
             <Link
               to={`/reservations/${reservation_id}/seat`}
-              className="res-btn medium-bg light accent2-hover"
+              className="res-btn light-green-bg dark-neutral"
             >
               Seat
             </Link>
           )}
           <Link
             to={`/reservations/${reservation_id}/edit`}
-            className="res-btn med-dark-bg light accent1-hover"
+            className="res-btn med-green-bg dark-neutral"
           >
             Edit
           </Link>
@@ -73,7 +73,7 @@ export default function ReservationDetail({ reservation, setError }) {
           <button
             onClick={handleCancel}
             data-reservation-id-cancel={reservation_id}
-            className="res-btn light dark-bg accent3-hover rounded-right-corners-rotated"
+            className="res-btn light medium-bg rounded-right-corners-rotated"
           >
             Cancel
           </button>

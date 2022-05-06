@@ -60,11 +60,11 @@ export default function SeatReservation() {
       <ErrorAlert error={error} />
       <h1 className="text-center">Seating:</h1>
       <h2 className="text-center">
-        <span className="accent1">
+        <span className="med-green">
           {reservation.first_name} {reservation.last_name}{" "}
         </span>
-        <span className="font-italic medium">party of</span>{" "}
-        <span className="accent1">{reservation.people}</span>
+        <span className="medium">party of</span>
+        <span className="med-green"> {reservation.people}</span>
       </h2>
       <form onSubmit={handleSubmit}>
         <div className="seat-form-buffer">
@@ -84,12 +84,12 @@ export default function SeatReservation() {
         <div>
           <button
             type="button"
-            className="form-btn dark-bg light"
+            className="form-btn medium-bg light"
             onClick={history.goBack}
           >
             Cancel
           </button>
-          <button type="submit" className="form-btn accent2-bg">
+          <button type="submit" className="form-btn light-green-bg">
             Submit
           </button>
         </div>

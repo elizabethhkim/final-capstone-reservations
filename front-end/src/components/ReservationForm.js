@@ -190,13 +190,13 @@ export default function ReservationForm() {
         </div>
         <div>
           <button
-            className="form-btn dark-bg light"
+            className="form-btn medium-bg light"
             type="button"
             onClick={history.goBack}
           >
             Cancel
           </button>
-          <button className="form-btn accent1-bg" type="submit">
+          <button className="form-btn med-green-bg" type="submit">
             Submit
           </button>
         </div>

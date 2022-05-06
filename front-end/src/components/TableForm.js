@@ -80,12 +80,12 @@ export default function TableForm() {
         <div>
           <button
             type="button"
-            className="form-btn dark-bg light"
+            className="form-btn medium-bg light"
             onClick={history.goBack}
           >
             Cancel
           </button>
-          <button type="submit" className="form-btn accent2-bg">
+          <button type="submit" className="form-btn med-green-bg">
             Submit
           </button>
         </div>

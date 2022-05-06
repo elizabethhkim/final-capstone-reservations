@@ -1,5 +1,10 @@
 .title {
     text-align: center;
+    font-weight:bold;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    color: var(--clr-neutral-dark)
+    
   }
   
   .section-heading {
@@ -10,6 +15,7 @@
   
   .sub-title {
   margin: 0;
+  font-weight:600;
   }
   
   .reservations-date {
@@ -47,5 +53,6 @@
     .dashboard-content {
       display: flex;
       flex-wrap: wrap;
+      padding-left: 1rem;
     }
   }

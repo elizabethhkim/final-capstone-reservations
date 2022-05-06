@@ -23,7 +23,7 @@ export default function TableDetail({ table, setError }) {
       className="dark tab-status-detail occupied"
       data-table-id-status={table.table_id}
     >
-      <span className="tab-status accent1-bg  rounded-top-left-corner">
+      <span className="tab-status medium-bg  rounded-top-left-corner">
         Occupied
       </span>
       <button
@@ -37,7 +37,7 @@ export default function TableDetail({ table, setError }) {
     </p>
   ) : (
     <p
-      className="accent2-bg tab-status-detail rounded-left-corners"
+      className="med-green-bg tab-status-detail rounded-left-corners"
       data-table-id-status={table.table_id}
     >
       Free

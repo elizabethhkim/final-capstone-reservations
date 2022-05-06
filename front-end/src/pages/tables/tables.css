@@ -5,13 +5,13 @@
   .tab-status-detail {
     display: flex;
     flex-direction: column;
-    width: 90px;
+    width: 80px;
     height: 100%;
     margin: 0 .5rem 0 0;
     justify-content: center;
     text-align: center;
-    border-right: 2px solid var(--clr-dark);
-    font-size: 1.7rem;
+    border-right: 2px solid var(--clr-green-dark);
+    font-size: 1.5rem;
   }
   
   .occupied {
@@ -31,11 +31,6 @@
   }
   
   .table-form .form-inputs {
-    border: .2rem solid var(--clr-accent2);
+    border: .2rem solid var(--clr-green-dark);
   }
   
-  .table-form .res-inp:hover,
-  .table-form .res-inp:focus {
-    border: 4px solid var(--clr-accent2);
-  
-  }

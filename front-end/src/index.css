@@ -8,6 +8,14 @@
     --clr-accent2: hsl(185, 75%, 44%);
     --clr-accent2-light: hsla(185, 75%, 44%, 0.15);
     --clr-accent3: hsl(56, 54%, 53%);
+
+
+    --clr-neutral-light: hsl(37, 33%, 69%);
+    --clr-neutral-med: hsl(37, 26%, 52%);
+    --clr-neutral-dark: hsl(38, 30%, 31%);
+    --clr-green-light: hsl(113, 28%, 71%);
+    --clr-green-med: hsl(113, 27%, 61%);
+    --clr-green-dark: hsl(114, 23%, 32%);
   }
   
   .body {
@@ -18,6 +26,41 @@
     min-height: 100vh;
   }
   
+  .light-green-bg {
+    background-color: var(--clr-green-light);
+  }
+
+  .med-green-bg {
+    background-color: var(--clr-green-med);
+  }
+
+  .med-green {
+    color: var(--clr-green-med)
+  }
+
+  .dark-green {
+    color: var(--clr-green-dark);
+  }
+  .dark-green-bg {
+    background-color: var(--clr-green-dark);
+  }
+
+  .light-neutral-bg {
+    background-color: var(--clr-neutral-light);
+  }
+
+  .med-neutral-bg {
+    background-color: var(--clr-neutral-med);
+  }
+
+  .med-neutral {
+    color:  var(--clr-neutral-med)
+  }
+
+  .dark-neutral {
+    color: var(--clr-neutral-dark)
+  }
+
   .dark {
     color: var(--clr-dark);
   }
@@ -86,8 +129,8 @@
     color: var(--clr-accent3);
   }
   
-  .accent3-hover:hover {
-    color: var(--clr-accent3);
+  .med-neutral-hover:hover {
+    color: var(--clr-neutral-med);
   }
   
   .accent3-bg {

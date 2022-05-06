@@ -6,12 +6,16 @@ header {
   padding: .5rem;
 }
 .logo {
-  font-size: 2.7rem;
-  padding-top: .5rem;
+  font-size: 4rem;
+  padding-top: 1rem;
   margin: 0;
+  text-align: center;
+  font-weight: bold;
 }
 .menu-text {
   display: none;
+  font-weight:600;
+  text-align: center;
 }
 
 nav {
@@ -35,7 +39,7 @@ nav {
   }
   .menu-text {
     display: inline;
-    font-size: 1.3rem;
+    font-size: 2rem;
   }
 }
 @media all and (min-width: 800px) {
@@ -47,7 +51,8 @@ nav {
   }
 
   .logo {
-    font-size: 1.9rem;
+    font-size: 2rem;
+    text-align: center;
   }
   
   .top-nav {

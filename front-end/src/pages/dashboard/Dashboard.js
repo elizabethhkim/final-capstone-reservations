@@ -47,15 +47,24 @@ function Dashboard() {
 
   return (
     <>
-      <h1 className="title">Dashboard</h1>
+      <h1 className="dark-neutral title">Dashboard</h1>
       <ErrorAlert error={error} />
       <div className="dashboard-content">
-        <section id="reservations">
+
+        <section id="tables">
           <div className="section-heading">
-            <h2 className="sub-title">
-              <i className="fas fa-user-friends accent1"></i> Reservations
+            <h2 className="med-neutral sub-title">
+              Tables
             </h2>
-            <p className="reservations-date">for {dateFormat(date)}</p>
+          </div>
+          <TablesList tables={tables} setError={setError} />
+        </section>
+        <section className="medium" id="reservations">
+          <div className="section-heading">
+            <h2 className="med-neutral sub-title">
+              Reservations
+            </h2>
+            <p className="medium reservations-date">for {dateFormat(date)}</p>
           </div>
 
           <DateNav
@@ -66,7 +75,7 @@ function Dashboard() {
             setDate={setDate}
           />
 
-          {reservations.length < 1 && <h3>No reservations for this date</h3>}
+          {reservations.length < 1 && <h3> No reservations for this date </h3>}
 
           <ReservationsList
             reservations={reservations}
@@ -78,14 +87,7 @@ function Dashboard() {
             setDate={setDate}
           />
         </section>
-        <section id="tables">
-          <div className="section-heading">
-            <h2 className="sub-title">
-              <i className="fas fa-utensils accent2"></i> {""} Tables
-            </h2>
-          </div>
-          <TablesList tables={tables} setError={setError} />
-        </section>
+
       </div>
     </>
   );

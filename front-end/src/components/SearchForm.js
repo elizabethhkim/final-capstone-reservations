@@ -16,7 +16,7 @@ export default function SearchForm({
               autoFocus
               required
             />
-            <button type="submit" className="form-btn accent1-bg">
+            <button type="submit" className="form-btn med-green-bg">
               Find
             </button>
         </div>

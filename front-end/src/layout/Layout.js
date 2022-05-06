@@ -4,19 +4,14 @@ import Routes from "./Routes";
 import { Link } from "react-router-dom";
 
 
-import "./Layout.css";
+import "./layout.css";
 
-/**
- * Defines the main layout of the application.
- *
- * @returns {JSX.Element}
- */
 function Layout() {
   return (
     <div className="body">
-      <header className="dark-bg ">
-        <Link to="/" className="light accent3-hover">
-        <h1 className="logo">Periodic Tables</h1>
+      <header className="light-neutral-bg">
+        <Link to="/" className="light med-neutral-hover">
+        <h1 className="logo">Liz's Restaurant</h1>
         </Link>
         <Menu />
       </header>
