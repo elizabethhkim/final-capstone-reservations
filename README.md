@@ -71,9 +71,6 @@ __/reservations/new__
 ![create-reservation](./screenshots/create-reservation.png)
 <br>
 
-__mobile dashboard__
-![mobile](./screenshots/mobile.png)
-<br>
 
 <br>
 <br>
