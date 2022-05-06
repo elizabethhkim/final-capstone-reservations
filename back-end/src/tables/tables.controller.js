@@ -9,12 +9,13 @@ const VALID_PROPERTIES = ["table_name", "capacity", "reservation_id"]
 const hasRequiredProperties = hasProperties(REQUIRED_PROPERTIES)
 
 function hasOnlyValidProps(req, res, next) {
+
     const {data} = req.body
 
     if(!data) {
         return next({
             status:400,
-            message: "Data Required!"
+            message: "Missing Data!"
         })
     }
     const invalidFields = Object.keys(data).filter((field) => !VALID_PROPERTIES.includes(field))
@@ -32,7 +33,7 @@ function nameisValid(req) {
     const {table_name} = req.body.data
 
     if(!table_name || table_name.length < 2) {
-        return "table_name must be at least two characters"
+        return "table_name must be at least two characters."
     }
     return false
 }
@@ -49,20 +50,23 @@ function capacityisValid(req) {
 
 // if table occupied, return error
 function tableIsAvailable(req, res, next) {
-    const {reservation_id} = res.locals.table
+    const { reservation_id } = res.locals.table;
+
+    // has the table already been sat?
     if (reservation_id) {
-        return next({
-            status: 400,
-            message: "Cannot seat an occupied table."
-        })
+      return next({
+        status: 400,
+        message: 'Cannot seat an occupied table.'
+      })
     }
-    next()
-}
+    next();
+  }
 
 // if number of ppl in the reservation is > capacity of the table, return error. else return next
 function tableCanSeat(req, res, next) {
+
     const {capacity} = res.locals.table
-    const {people} = res.locals.reservation_id
+    const {people} = res.locals.reservation
 
     if (people > capacity) {
         return next({
@@ -88,6 +92,7 @@ function tableIsOccupied(req, res, next) {
 
 // if reservation has already been seated, don't let user seat the reservation, else return next 
 function canBeSeat(req, res, next) {
+
     const {status} = res.locals.reservation
     if (status === "seated") {
         return next({
@@ -100,6 +105,7 @@ function canBeSeat(req, res, next) {
 
 //if reservation doesn't exist, send 404 response with a message saying the reservation doesn't exist
 async function reservationExists(req, res, next) {
+
     const {reservation_id} = req.body.data
     if (!reservation_id) {
         return next({
@@ -122,6 +128,7 @@ async function reservationExists(req, res, next) {
 // if table doesn't exist, send 404 response with a message saying the table doesn't exist
 
 async function tableExists(req, res, next) {
+
     const {table_id} = req.params
     const foundTable = await service.read(table_id)
 
@@ -162,7 +169,6 @@ function createValidation(req, res, next) {
 
 //LIST
 async function list(req, res) {
-    const tables = await service.list()
     res.json({data:await service.list()})
 }
 

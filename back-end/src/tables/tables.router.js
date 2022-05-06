@@ -5,7 +5,8 @@ const controller = require("./tables.controller")
 router.route("/:table_id/seat")
     .put(controller.seatTable)
     .delete(controller.openTable)
-    .all(methodNotAllowed)
+    .all(methodNotAllowed);
+
 
 router.route("/")
     .get(controller.list)
