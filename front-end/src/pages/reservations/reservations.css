@@ -8,11 +8,11 @@
     flex-direction: column;
     text-align: center;
     width: 75px;
-    transform: rotate(-90deg);
+
   }
   
   .seated-buttons {
-    transform: rotate(-90deg) translate(12.5px, 12.5px);
+    height: 100%
   }
   
   .res-btn {
@@ -22,12 +22,12 @@
   }
   
   .res-status {
-    height: 25px;
+    height: 100%;
     text-align: center;
     width: 75px;
     padding: .2rem;
-    transform: rotate(-90deg) translate(-25px, -25px);
-    margin-right: -45px;
+
+    margin-right: 10px;
   }
   
   .res-card.booked {
