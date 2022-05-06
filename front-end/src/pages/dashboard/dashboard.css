@@ -1,0 +1,51 @@
+.title {
+    text-align: center;
+  }
+  
+  .section-heading {
+    display: flex;
+    flex-direction: column;
+    padding: .7rem;
+  }
+  
+  .sub-title {
+  margin: 0;
+  }
+  
+  .reservations-date {
+    margin: 0;
+  }
+  
+  .date-nav {
+    display:flex;
+    justify-content: center;
+    margin-bottom: 1.7rem;
+  }
+  
+  .date-nav button {
+    margin: 0 0.5rem;
+  }
+  
+  section {
+    flex: 1;
+    width: 100%;
+  }
+  
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .detail-card {
+    display: flex;
+    margin: .5rem;
+    height: 79px;
+    border-radius: .5rem;
+  }
+  
+  @media all and (min-width: 941px) {
+    .dashboard-content {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
