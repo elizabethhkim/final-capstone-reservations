@@ -4,7 +4,7 @@ import Routes from "./Routes";
 import { Link } from "react-router-dom";
 
 
-import "./layout.css";
+import "./layout.css"
 
 function Layout() {
   return (
