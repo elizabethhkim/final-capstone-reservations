@@ -1,5 +1,5 @@
 import { useState } from "react";
-import SearchForm from "../../Components/SearchForm";
+import SearchForm from "../../components/SearchForm";
 import ErrorAlert from "../../layout/ErrorAlert";
 import { listReservations } from "../../utils/api";
 import ReservationsList from "./ReservationsList";

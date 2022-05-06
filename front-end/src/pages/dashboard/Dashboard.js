@@ -3,10 +3,10 @@ import { listReservations, listTables } from "../../utils/api";
 import { today, next, previous } from "../../utils/date-time";
 import useQuery from "../../utils/useQuery";
 import ErrorAlert from "../../layout/ErrorAlert";
-import ReservationsList from "../Reservations/ReservationsList";
+import ReservationsList from "../reservations/ReservationsList";
 import DateNav from "../../layout/DateNav";
-import dateFormat from "../../utils/dateFormat";
-import TablesList from "../Tables/TablesList";
+import dateFormat from "../../utils/date-format";
+import TablesList from "../tables/TablesList";
 import "./dashboard.css";
 
 function Dashboard() {

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router";
-import SelectTable from "../../Components/SelectTable";
+import SelectTable from "../../components/SelectTable";
 import ErrorAlert from "../../layout/ErrorAlert";
 import { listTables, readReservation, seatTable } from "../../utils/api";
 

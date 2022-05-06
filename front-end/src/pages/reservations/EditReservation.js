@@ -1,4 +1,4 @@
-import ReservationForm from "../../Components/ReservationForm";
+import ReservationForm from "../../components/ReservationForm";
 
 export default function EditReservation() {
   return (

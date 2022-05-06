@@ -1,0 +1,130 @@
+:root {
+    --clr-dark: hsl(0, 0%, 20%);
+    --clr-med-dark: hsl(0, 0%, 30%);
+    --clr-med: hsl(0, 0%, 40%);
+  
+    --clr-light: hsl(0, 0%, 90%);
+    --clr-accent1: hsl(19, 100%, 61%);
+    --clr-accent2: hsl(185, 75%, 44%);
+    --clr-accent2-light: hsla(185, 75%, 44%, 0.15);
+    --clr-accent3: hsl(56, 54%, 53%);
+  }
+  
+  .body {
+    display: flex;
+    flex-direction: column;
+    color: var(--clr-dark);
+    background-color: var(--clr-light);
+    min-height: 100vh;
+  }
+  
+  .dark {
+    color: var(--clr-dark);
+  }
+  
+  .dark-bg {
+    background-color: var(--clr-dark);
+  
+  }
+  
+  .med-dark {
+    color: var(--clr-med-dark);
+  }
+  
+  .med-dark-bg {
+    background-color: var(--clr-med-dark);
+  
+  }
+  .medium {
+    color: var(--clr-med);
+  }
+  
+  .medium-bg {
+    background-color: var(--clr-med);
+  }
+  
+  .light {
+    color: var(--clr-light);
+  }
+  
+  .light-bg {
+    background-color: var(--clr-light);
+  }
+  .light-hover:hover {
+    color: var(--clr-light);
+  }
+  
+  .accent1 {
+    color: var(--clr-accent1);
+  }
+  
+  .accent1-hover:hover {
+    color: var(--clr-accent1);
+  }
+  
+  .accent1-bg {
+    background-color: var(--clr-accent1);
+  }
+  
+  .accent2 {
+    color: var(--clr-accent2);
+  }
+  
+  .accent2-hover:hover {
+    color: var(--clr-accent2);
+  }
+  
+  .accent2-bg {
+    background-color: var(--clr-accent2);
+  }
+  
+  .accent2-light-bg {
+    background-color: var(--clr-accent2-light);
+  }
+  
+  .accent3 {
+    color: var(--clr-accent3);
+  }
+  
+  .accent3-hover:hover {
+    color: var(--clr-accent3);
+  }
+  
+  .accent3-bg {
+    background-color: var(--clr-accent3);
+  }
+  
+  .accent1-hover:hover,
+  .accent2-hover:hover,
+  .accent3-hover:hover {
+    text-decoration: none;
+  }
+  
+  .rounded-left-corners-rotated {
+    border-radius: .3rem .3rem 0 0;
+  }
+  
+  .rounded-left-corners {
+    border-radius: .36rem 0 0 .36rem;
+  }
+  
+  .rounded-right-corners-rotated {
+    border-radius: 0 0 .36rem .36rem;
+  }
+  .rounded-top-left-corner {
+    border-radius: .36rem 0 0 0;
+  }
+  .rounded-bottom-left-corner {
+    border-radius: 0 0 0 .36rem;
+  }
+  
+  @media all and (min-width: 800px) {
+    .body {
+      flex-direction: row;
+    }
+  
+    .content {
+      flex-grow: 1;
+      margin-left: 250px;
+    }
+  }

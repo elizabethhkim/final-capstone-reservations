@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router";
 import { cancelReservation } from "../../utils/api";
-import dateFormat from "../../utils/dateFormat";
-import formatTime from "../../utils/timeFormat";
+import dateFormat from "../../utils/date-format";
+import formatTime from "../../utils/time-format";
 
 export default function ReservationDetail({ reservation, setError }) {
   const history = useHistory();
