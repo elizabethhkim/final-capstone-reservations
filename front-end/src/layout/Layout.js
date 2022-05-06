@@ -10,7 +10,7 @@ function Layout() {
     <div className="body">
       <header className="light-neutral-bg">
         <Link to="/" className="light med-neutral-hover">
-        <h1 className="logo">Liz's Restaurant</h1>
+        <h1 className="logo">Periodic Tables</h1>
         </Link>
         <Menu />
       </header>
