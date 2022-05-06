@@ -181,7 +181,7 @@ function updateValidation(req, res, next) {
   let errors = []
 
   if (validTime(req)) errors.push(validTime(req))
-  if (validDate(req)) errors = [...errors, ...dateIsValid(req)]
+  if (validDate(req)) errors = [...errors, ...validDate(req)]
   if (peopleIsValid(req)) errors.push(peopleIsValid(req))
   if (errors.length > 0) {
     if (errors.length === 1) {
@@ -233,11 +233,13 @@ async function updateStatus(req, res) {
 
 // UPDATE
 async function update(req, res) {
-  const {resrvation_id} = res.locals.reservation
+  const {reservation_id} = res.locals.reservation
+
   const updatedRes = {
     ...req.body.data,
-    reservation_id
+    reservation_id,
   }
+  console.log(updatedRes)
   res.json({data: await service.update(updatedRes)})
 }
 
