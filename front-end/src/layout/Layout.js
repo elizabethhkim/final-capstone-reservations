@@ -3,7 +3,6 @@ import Menu from "./Menu";
 import Routes from "./Routes";
 import { Link } from "react-router-dom";
 
-
 import "./layout.css"
 
 function Layout() {
