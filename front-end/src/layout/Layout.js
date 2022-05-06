@@ -3,7 +3,7 @@ import Menu from "./Menu";
 import Routes from "./Routes";
 import { Link } from "react-router-dom";
 
-import "./layout.css"
+import "./Layout.css"
 
 function Layout() {
   return (
