@@ -14,6 +14,7 @@ A restaurant reservation system that allows restaurant staff to:
 - tables:
 	- create a new table
 	- seat a table with a reservation
+	- view available/occupied tables
 	- finish seated reservations
 
 
