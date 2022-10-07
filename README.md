@@ -47,7 +47,7 @@ API base url: https://capstone-reservation-backend.herokuapp.com/
 
 CSS
 HTML
-JavaSccript
+JavaScript
 React
 
 #### Back-end
